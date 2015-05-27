@@ -1,6 +1,6 @@
 # ThingyNotifier
 
-This is example/companion code to a [blogpost](http://inferis.org) I wrote about using Swift arrays of protocols.
+This is example/companion code to a [blogpost](http://blog.inferis.org/blog/2015/05/27/swift-an-array-of-protocols/) I wrote about using Swift arrays of protocols.
 
 ### License
 
