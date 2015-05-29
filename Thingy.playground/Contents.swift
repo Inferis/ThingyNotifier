@@ -34,10 +34,10 @@ class ThingyManager {
     
     func removeNotifier(notifier: ThingyNotifier) {
         for (var i=0; i<notifiers.count; ++i) {
-			if ObjectIdentifier(notifiers[i]) == ObjectIdentifier(notifier) {
-				notifiers.removeAtIndex(i)
-				break;
-			}
+            if ObjectIdentifier(notifiers[i]) == ObjectIdentifier(notifier) {
+                notifiers.removeAtIndex(i)
+                break;
+            }
         }
     }
     
