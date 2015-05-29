@@ -3,7 +3,7 @@
 import Cocoa
 import Swift
 
-protocol ThingyNotifier : NSObjectProtocol {
+protocol ThingyNotifier: AnyObject {
     func didDoOneThingy(thingyName: String)
     func didDoOtherThingy(thingyId: Int)
 }
@@ -34,10 +34,10 @@ class ThingyManager {
     
     func removeNotifier(notifier: ThingyNotifier) {
         for (var i=0; i<notifiers.count; ++i) {
-            if notifiers[i].isEqual(notifier) {
-                notifiers.removeAtIndex(i)
-                break;
-            }
+			if ObjectIdentifier(notifiers[i]) == ObjectIdentifier(notifier) {
+				notifiers.removeAtIndex(i)
+				break;
+			}
         }
     }
     
